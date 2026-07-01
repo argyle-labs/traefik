@@ -2,6 +2,10 @@
 name = "traefik"
 version = "0.1.0"
 edition = "2021"
+description = "Traefik reverse proxy / ingress — orca service-backend"
+
+[package.metadata.orca]
+category = "networking"
 
 [lib]
 name = "traefik"
