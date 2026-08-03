@@ -82,10 +82,14 @@ orca drives this plugin through the single generic `service.*` surface — no pe
 
 ```sh
 orca service.deploy traefik      # render + launch on any supported runtime
-orca service.status traefik      # health + rich diagnostics (typed payload)
+orca service.status traefik      # health + rich diagnostics (planned; not yet implemented)
 orca service.backup traefik      # location-agnostic backup (tar; PBS on Proxmox)
-orca service.configure traefik   # apply config via the upstream API
+orca service.configure traefik   # apply config via the upstream API (planned; not yet implemented)
 ```
+
+> `service.status` and `service.configure` are declared capabilities but are
+> not yet implemented in this plugin; they currently return an unimplemented
+> error.
 
 ## Layout
 
